@@ -1,0 +1,94 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+/* body{
+  background-color: black;
+  background: linear-gradient(to bottom right, #000000, #0a0f1a, #0d1b2a);
+  bg-gradient-to-br from-black via-[#0a0a1f] to-[#010314]
+  background: linear-gradient(to bottom right, black, #0a0a1f, #010314);
+} */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* prevent background scroll */
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom right, black, #0a0a1f, #010314);
+}
+
+*{
+  /* margin: 0; */
+  font-family: "Poppins", sans-serif;
+}
+
+.default-bg{
+  background: linear-gradient(to bottom right, black, #0a0a1f, #010314);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 12s linear infinite;
+}
+
+
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+}
+
+/* Gradient Text 2 ----------------------------------------------------------------------------------- */
+:root {
+  --gradient-animation: gradient-shift 5s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-text-animated {
+  color: transparent;
+  background-image: linear-gradient(to right, #a855f7, #ec4899, #eab308);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+  animation: var(--gradient-animation);
+}
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Gradient Card --------------------------------------------------------------------------------------*/
+@layer utilities {
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient-shift {
+    animation: gradient-shift 3s linear infinite;
+  }
+}
+/* --------------------------------------------------------------------------------------------------- */
