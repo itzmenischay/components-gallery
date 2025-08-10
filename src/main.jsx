@@ -7,6 +7,7 @@ import HomePage from './components/homepage/HomePage.jsx';
 import Body from './components/body/Body.jsx';
 import Contact from './components/contact/Contact.jsx';
 import Backgrounds from './components/backgrounds/Backgrounds.jsx';
+import Testing from './components/Testing.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: 'backgrounds',
         element: <Backgrounds/>
+      },
+      {
+        path: 'testing',
+        element: <Testing/>
       },
       {
         path: 'contact',

@@ -4,6 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import GlowButton from '../../elements/GlowButton';
+import BlobAnimate from '../../bg-elements/BlobAnimate';
+import Illustration from "./../../assets/illustration.jpg"
 
 const HomePage = () => {
   const [showContent, setShowContent] = useState(false);
@@ -55,7 +57,8 @@ const HomePage = () => {
           </div>
         </div>
         <div data-aos="fade-left">
-          <p className='text-white text-xl'>Some image or illustration here</p>
+            <BlobAnimate size='20rem'/>
+            <p className='text-white text-xl'>Some image or illustration here</p>
         </div>
       </div>
     </div>

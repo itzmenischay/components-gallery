@@ -37,7 +37,7 @@ const PerspectiveCard = ({ children }) => {
 
   return (
     <div
-      className='card relative h-48 w-48 transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform'
+      className='card relative h-50 w-50 transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform'
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
       style={{

@@ -19,8 +19,9 @@ const Navbar = (props) => {
           <Link to="/"><button className='hover:bg-gray-700 px-4 py-2 rounded-full transition-all cursor-pointer'>Home</button></Link>
           <Link to="/components"><button className='hover:bg-gray-700 px-4 py-2 rounded-full transition-all cursor-pointer'>Components</button></Link>
           <Link to="/backgrounds"><button className='hover:bg-gray-700 px-4 py-2 rounded-full transition-all cursor-pointer'>Backgrounds</button></Link>
+          <Link to="/testing"><button className='hover:bg-gray-700 px-4 py-2 rounded-full transition-all cursor-pointer'>Testing</button></Link>
           <Link to="/contact"><button className='hover:bg-gray-700 px-4 py-2 rounded-full transition-all cursor-pointer'>Contact</button></Link>
-          <Link to='https://github.com/dashboard' target='_blank'><HoverButton label='Hover Me!'/></Link>
+          <Link to='https://github.com/dashboard' target='_blank'><HoverButton label='GitHub'/></Link>
       </ul>
       </div>
     </nav>
